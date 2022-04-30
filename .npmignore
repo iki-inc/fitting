@@ -1,0 +1,11 @@
+.github
+.node-version
+.nvmrc
+tests
+node_modules
+dist
+yarn.lock
+package-lock.json
+__tests__
+tests
+coverage
