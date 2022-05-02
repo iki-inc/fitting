@@ -91,9 +91,11 @@ default: `top left`
 Position pattern as below.
 
 ```
-top left | top center | top right
-middle left | center | middle right
-bottom left | bottom center | bottom right
+-------------------------------------------
+top left    |   top center   |    top right
+middle left |     center     | middle right
+bottom left |  bottom center | bottom right
+-------------------------------------------
 ```
 
 **`scale`** (Optional)  
