@@ -2,6 +2,25 @@
 
 Library to calculate with JS when `background-size` or `object-fit` is not available.
 
+## Install
+
+```shell
+npm install @iki-inc/fitting
+# or
+yarn add @iki-inc/fitting
+```
+
+## Usage
+
+```js
+import Fitting from '@iki-inc/fitting'
+
+const res = Fitting.cover(
+  { width: 100, height: 200 },
+  { width: 150, height: 400 }
+)
+```
+
 ## Methods
 
 ### `Fitting.cover(base, target[, options]): { width: number, height: number, x: numner, y: numner }`
