@@ -66,3 +66,9 @@ console.log(
 )
 // -> width: 1000, height: 200, x: -100, y: 100
 ```
+
+```
+top left | top center | top right
+middle left | center | middle right
+bottom left | bottom center | bottom right
+```

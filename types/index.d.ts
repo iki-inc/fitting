@@ -15,5 +15,17 @@ declare const Fitting: {
         x: number;
         y: number;
     };
+    contain: (base: {
+        width: number;
+        height: number;
+    }, target: {
+        width: number;
+        height: number;
+    }, position?: "top left" | "top center" | "top right" | "middle left" | "center" | "middle right" | "bottom left" | "bottom center" | "bottom right") => {
+        width: number;
+        height: number;
+        x: number;
+        y: number;
+    };
 };
 export default Fitting;
