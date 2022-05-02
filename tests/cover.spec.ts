@@ -7,7 +7,7 @@ test('cover: default', () => {
     width: 2000,
     height: 400,
     x: -600,
-    y: -0
+    y: 0
   })
 })
 
@@ -37,7 +37,7 @@ test('cover: scaleX', () => {
     width: 1000,
     height: 400,
     x: -100,
-    y: -0
+    y: 0
   })
 })
 
@@ -67,7 +67,7 @@ test('cover: write by scaleX and scale', () => {
     width: 1000,
     height: 400,
     x: -100,
-    y: -0
+    y: 0
   })
 })
 

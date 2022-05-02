@@ -27,10 +27,13 @@ export const cover = (
   const cw = target.width * scaleX * ratio
   const ch = target.height * scaleY * ratio
 
+  const cx = (cw - base.width) / 2
+  const cy = (ch - base.height) / 2
+
   return {
     width: cw,
     height: ch,
-    x: -((cw - base.width) / 2),
-    y: -((ch - base.height) / 2)
+    x: cx === 0 ? cx : -cx,
+    y: cy === 0 ? cy : -cy
   }
 }

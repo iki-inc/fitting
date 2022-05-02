@@ -55,7 +55,7 @@ import Fitting from '@iki-inc/fitting'
 console.log(
   Fitting.cover({ width: 800, height: 400 }, { width: 1000, height: 200 })
 )
-// -> width: 2000, height: 400, x: -600, y: -0
+// -> width: 2000, height: 400, x: -600, y: 0
 
 console.log(
   Fitting.cover(
