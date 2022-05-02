@@ -4,10 +4,10 @@ test('cover: default', () => {
   expect(
     Fitting.cover({ width: 800, height: 400 }, { width: 1000, height: 200 })
   ).toMatchObject({
-    cw: 2000,
-    ch: 400,
-    cx: -600,
-    cy: -0
+    width: 2000,
+    height: 400,
+    x: -600,
+    y: -0
   })
 })
 
@@ -19,10 +19,10 @@ test('cover: scale', () => {
       { scale: 0.5 }
     )
   ).toMatchObject({
-    cw: 1000,
-    ch: 200,
-    cx: -100,
-    cy: 100
+    width: 1000,
+    height: 200,
+    x: -100,
+    y: 100
   })
 })
 
@@ -34,10 +34,10 @@ test('cover: scaleX', () => {
       { scaleX: 0.5 }
     )
   ).toMatchObject({
-    cw: 1000,
-    ch: 400,
-    cx: -100,
-    cy: -0
+    width: 1000,
+    height: 400,
+    x: -100,
+    y: -0
   })
 })
 
@@ -49,10 +49,10 @@ test('cover: scaleY', () => {
       { scaleY: 0.5 }
     )
   ).toMatchObject({
-    cw: 2000,
-    ch: 200,
-    cx: -600,
-    cy: 100
+    width: 2000,
+    height: 200,
+    x: -600,
+    y: 100
   })
 })
 
@@ -64,10 +64,10 @@ test('cover: write by scaleX and scale', () => {
       { scale: 1, scaleX: 0.5 }
     )
   ).toMatchObject({
-    cw: 1000,
-    ch: 400,
-    cx: -100,
-    cy: -0
+    width: 1000,
+    height: 400,
+    x: -100,
+    y: -0
   })
 })
 
@@ -79,9 +79,9 @@ test('cover: write by scaleY and scale', () => {
       { scale: 1, scaleY: 0.5 }
     )
   ).toMatchObject({
-    cw: 2000,
-    ch: 200,
-    cx: -600,
-    cy: 100
+    width: 2000,
+    height: 200,
+    x: -600,
+    y: 100
   })
 })
