@@ -49,7 +49,7 @@ Y scale = 0.5 (scaleY)
 
 #### Example
 
-```ts
+```js
 import Fitting from '@iki-inc/fitting'
 
 console.log(

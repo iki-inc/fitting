@@ -2,7 +2,7 @@
   "name": "@iki-inc/fitting",
   "version": "0.0.1",
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "repository": "https://github.com/iki-inc/fitting.git",
   "homepage": "https://github.com/iki-inc/fitting",
   "author": "IKI Inc.",
@@ -18,6 +18,9 @@
   "engines": {
     "node": ">= 14.17.0"
   },
+  "files": [
+    "types"
+  ],
   "release-it": {
     "git": {
       "commitMessage": "chore: Release v${version}",
