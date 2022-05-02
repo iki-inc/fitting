@@ -10,6 +10,7 @@ declare type TPosition = 'top left' | 'top center' | 'top right' | 'middle left'
  * @param base - base size
  * @param target - change size
  * @param position
+ * @param scale
  */
 export declare const contain: (base: {
     width: number;
@@ -17,7 +18,7 @@ export declare const contain: (base: {
 }, target: {
     width: number;
     height: number;
-}, position?: TPosition) => {
+}, position?: TPosition, scale?: number) => {
     width: number;
     height: number;
     x: number;

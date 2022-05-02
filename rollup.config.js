@@ -1,6 +1,6 @@
 import typescript from 'rollup-plugin-typescript2'
-import {terser} from 'rollup-plugin-terser'
-import {author, description, homepage, license, version} from './package.json'
+import { terser } from 'rollup-plugin-terser'
+import { author, description, homepage, license, version } from './package.json'
 import json from '@rollup/plugin-json'
 
 export default {

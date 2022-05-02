@@ -50,6 +50,7 @@ const cy = (base: number, ch: number, position: TPosition): number => {
  * @param base - base size
  * @param target - change size
  * @param position
+ * @param scale
  */
 export const contain = (
   base: {
@@ -60,7 +61,8 @@ export const contain = (
     width: number
     height: number
   },
-  position: TPosition = 'top left'
+  position: TPosition = 'top left',
+  scale = 1
 ): {
   width: number
   height: number
@@ -69,8 +71,8 @@ export const contain = (
 } => {
   const ratio = Math.min(base.width / target.width, base.height / target.height)
 
-  const cw = target.width * ratio
-  const ch = target.height * ratio
+  const cw = target.width * scale * ratio
+  const ch = target.height * scale * ratio
 
   return {
     width: cw,

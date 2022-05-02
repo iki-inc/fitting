@@ -112,3 +112,37 @@ describe('contain: bottom left', () => {
     })
   })
 })
+
+describe('contain: center', () => {
+  test('scale down', () => {
+    expect(
+      contain(
+        { width: 800, height: 400 },
+        { width: 1000, height: 200 },
+        'center',
+        0.5
+      )
+    ).toMatchObject({
+      width: 400,
+      height: 80,
+      x: 200,
+      y: 160
+    })
+  })
+
+  test('scale up', () => {
+    expect(
+      contain(
+        { width: 800, height: 400 },
+        { width: 1000, height: 200 },
+        'center',
+        1.5
+      )
+    ).toMatchObject({
+      width: 1200,
+      height: 240,
+      x: -200,
+      y: 80
+    })
+  })
+})

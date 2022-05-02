@@ -21,7 +21,7 @@ declare const Fitting: {
     }, target: {
         width: number;
         height: number;
-    }, position?: "top left" | "top center" | "top right" | "middle left" | "center" | "middle right" | "bottom left" | "bottom center" | "bottom right") => {
+    }, position?: "top left" | "top center" | "top right" | "middle left" | "center" | "middle right" | "bottom left" | "bottom center" | "bottom right", scale?: number) => {
         width: number;
         height: number;
         x: number;
