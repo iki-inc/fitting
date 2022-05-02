@@ -2,7 +2,7 @@
 https://github.com/iki-inc/fitting
 undefined
 
-Version: 0.0.1
+Version: 1.0.0
 License: MIT
 
 © 2022 IKI Inc.
