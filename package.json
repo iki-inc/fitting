@@ -33,7 +33,6 @@
     }
   },
   "scripts": {
-    "postinstall": "husky install",
     "prebuild": "eslint lib/*.ts",
     "build": "rollup -c",
     "test": "jest",
